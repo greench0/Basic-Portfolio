@@ -7,6 +7,7 @@ body {
   width: 960px;
   margin: 0 auto;
   background: lightgrey;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 
@@ -31,6 +32,7 @@ header, footer {
 }
 header {
   width: 100%;
+
   
 }
 
@@ -46,15 +48,17 @@ header {
 nav {
   float: right;
   text-align: center;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 0px;
   text-decoration: none;
+
   
 }
 
 #content {
   background: white;
-  border: 2px solid #dddddd;
+  border: 1px solid #dddddd;
   color: #333;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   margin-top: 25px;
 line-height: 200%;
 padding: 10px 25px 30px 25px;
@@ -91,58 +95,105 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
 
+#top {
+  background: white;
+  height: 77px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  float: left;
+  z-index: -1;
+  /* border-bottom: 1px solid #dddddd; */
+}
+
+/* header - nav list */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #777777;
   
 }
 
-
-
-
-
-
-
-
-
-/* 
-
-
-#division {
-  color:white;
-  padding: 20px;
-  margin-top: 20px;
-  background:#6ea3da;
-
+li{
+  display: inline;
+  color: #777777;
+  height: 100%;
 }
 
-aside {
-  background: #a6b747;
-  float: left;
-  color:white;
-  width: 300px;
-  height:150px;
-  padding: 20px;
-  margin: 0 0 0 20px;
-  border: 1px solid white;
+li a {
+  text-align: center;
+  color: #777777;
+  padding: 10px 10px;
+  text-decoration: none;
+}
 
+li a:hover {
+  color: #4aaaa5;
+}
+
+.vline {
+    border-right: 2px solid #777777;
+    height: 50px;
 }
 
 
 
+/* contact page info */
 
-#left {
-  width: 33.333%;
-  background:#30948d;
-  float: left;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 12px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  
 }
 
-#middle {
-  width: 33.333%;
-  background:#9e1212;
-  float: left;
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
 }
 
-#right {
-  width: 33.333%;
-  background:#30948d;
+input[type=submit]:hover {
+  background-color: #777777;
+}
+
+
+/* portfolio page info */
+.row{
+  width: 50%;
+  height: 320px;
+}
+
+.block {
+  position: relative;
+  padding: 15px 25px 0px 0px;
+  text-align: center;
+  color: white;
   float: left;
-} */
+
+}
+
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 44.5%;
+  transform: translate(-50%, -50%);
+  background: #4aaaa5;
+  width: 200px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 13px;
+}
+
