@@ -32,6 +32,7 @@ header {
   background:white;
 }
 
+
 /* header info */
 #logo {
   background: #4aaaa5;
@@ -54,7 +55,6 @@ nav {
 
 }
   
-  /* header - nav list */
   ul {
     list-style-type: none;
     margin: 0;
@@ -189,6 +189,21 @@ input[type=submit]:hover {
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-size: 13px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #777777;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 
 
 /* background info */
